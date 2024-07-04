@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="./assets/images/logo.svg">
     <title>Головна</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,35 +16,121 @@
 
 <body>
     <header id="header" class="header">
-        <div class="header__container container">
-            <div class="header__top-wrapper">
-                <div class="header__contacts"></div>
-                <nav class="header__top-navigation">
-                    <ul class="header__top-list">
-                        <li class="header__top-item">
-                            <a href="#" class="header__top-link">
-                                Контакти
+
+        <div class="header__top-wrapper">
+            <div class="header__container container">
+                <div class="header__top-inner">
+                    <div class="header__contacts">
+                        <div class="header__contacts-item">
+                            <img class="header__icon" src="./assets/images/location-icon.svg" alt="location">
+                            <address class="header__contacts-info header__contacts-info--address">
+                                м. Київ,
+                                вул. Антоновича
+                                34
+                            </address>
+                        </div>
+                        <div class="header__contacts-item">
+                            <img class="header__icon" src="./assets/images/mail-icon.svg" alt="mail">
+                            <a class="header__contacts-info" href="mailto:info@usap.ua" target="_blank">
+                                info@usap.ua
                             </a>
-                        </li>
-                        <li class="header__top-item">
-                            <a href="#" class="header__top-link">
-                                Про компанію
+                        </div>
+                        <div class="header__contacts-item">
+                            <img class="header__icon" src="./assets/images/phone-icon.svg" alt="phone">
+                            <a class="header__contacts-info header__contacts-info--phone" href="tel:+380674804684">
+                                (067)
+                                480-46-84
                             </a>
-                        </li>
-                        <li class="header__top-item">
-                            <a href="#" class="header__top-link">
-                                Блог
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                        </div>
+                    </div>
+                    <nav class="header__top-navigation">
+                        <ul class="header__top-list">
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">
+                                    Контакти
+                                </a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">
+                                    Про компанію
+                                </a>
+                            </li>
+                            <li class="header__top-item">
+                                <a href="#" class="header__top-link">
+                                    Блог
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="header__bottom-wrapper"></div>
+        </div>
+        <div class="header__bottom-wrapper">
+            <div class="header__container-bottom container">
+                <div class="header__top-inner">
+                    <div class="header__logo">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__navigation">
+                        <ul class="header__navigation-list">
+                            <li class="header__navigation-item">
+                                <button class="header__navigation-link">
+                                    Дослідження
+                                    <img src="./assets/images/chevron-icon.svg" alt="chevron">
+                                </button>
+                                <ul class="header__navigation-dropdown">
+                                    <li><a href="#">Діагнозів</a></li>
+                                    <li><a href="#">Препаратів</a></li>
+                                    <li><a href="#">Інформації</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <button class="header__navigation-link">
+                                    Консалтинг
+                                    <img src="./assets/images/chevron-icon.svg" alt="chevron">
+                                </button>
+                                <ul class="header__navigation-dropdown">
+                                    <li><a href="#">Інформації</a></li>
+                                    <li><a href="#">Чогось</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">
+                                    Сертифікація
+                                </a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">
+                                    Навчання
+                                </a>
+                            </li>
+                            <li class="header__navigation-item">
+                                <a href="#" class="header__navigation-link">
+                                    Наші клієнти
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__menu">
+                        <div class="header__custom-input">
+                            <input type="text" placeholder="Пошук">
+                            <img src="./assets/images/search-icon.svg" alt="search">
+                        </div>
+                        <button id="burger" class="header__burger">
+                            <img src="./assets/images/burger-icon.svg" alt="">
+                        </button>
+                        <button id="button-lng" class="header__button-lng">UA</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="container"></div>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/scripts/index.js" type="module" defer></script>
 </body>
 
 </html>

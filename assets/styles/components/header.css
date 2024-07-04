@@ -1,1 +1,241 @@
-/*# sourceMappingURL=header.css.map */
+/* ===== Usage ===== */
+/* ===== Usage ===== */
+/* ===== Usage ===== */
+/* ===== Usage ===== */
+.header__container {
+  padding: 20px 0;
+}
+.header__container-bottom {
+  padding: 40px 0 20px 0;
+}
+.header__top-wrapper {
+  background: rgba(207, 244, 129, 0.5);
+}
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1640px) {
+  .header__top-inner {
+    gap: 25px;
+  }
+}
+.header__contacts {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+@media (max-width: 1260px) {
+  .header__contacts {
+    gap: 3.5%;
+  }
+}
+@media (max-width: 991px) {
+  .header__contacts {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__contacts-item {
+  min-width: -moz-max-content;
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.header__contacts-info {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .header__contacts-info {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .header__contacts-info {
+    font-size: 10px;
+  }
+}
+.header__contacts-info--address {
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 1260px) {
+  .header__contacts-info--address {
+    max-width: 120px;
+  }
+}
+@media (max-width: 991px) {
+  .header__contacts-info--address {
+    white-space: wrap;
+  }
+}
+@media (max-width: 1260px) {
+  .header__contacts-info--phone {
+    white-space: nowrap;
+  }
+}
+.header__top-list {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+@media (max-width: 1640px) {
+  .header__top-list {
+    gap: 25px;
+  }
+}
+@media (max-width: 1260px) {
+  .header__top-list {
+    gap: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .header__top-list {
+    display: none;
+  }
+}
+.header__top-link {
+  white-space: nowrap;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header__logo {
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+@media (max-width: 1260px) {
+  .header__logo img {
+    width: 80%;
+  }
+}
+.header__navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 1640px) {
+  .header__navigation-list {
+    gap: 20px;
+  }
+}
+@media (max-width: 1260px) {
+  .header__navigation-list {
+    display: none;
+  }
+}
+.header__navigation-item {
+  position: relative;
+  display: inline-block;
+}
+.header__navigation-dropdown {
+  margin-top: 10px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.header__navigation-dropdown li {
+  list-style: none;
+  padding: 8px;
+  text-align: left;
+}
+.header__navigation-dropdown a {
+  color: black;
+  display: block;
+  padding: 8px 16px;
+}
+.header__navigation-dropdown a:hover {
+  background-color: #ddd;
+}
+.header__navigation-link {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 1640px) {
+  .header__navigation-link {
+    font-size: 16px;
+    gap: 5px;
+  }
+}
+@media (max-width: 1260px) {
+  .header__navigation-link {
+    font-size: 14px;
+  }
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header__button-lng {
+  background-color: #CFF481;
+  padding: 20px 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header__custom-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 49px;
+  padding: 5px 10px;
+  width: 220px;
+  height: 60px;
+  background-color: #fff;
+}
+@media (max-width: 1640px) {
+  .header__custom-input {
+    width: 150px;
+  }
+}
+@media (max-width: 1260px) {
+  .header__custom-input {
+    width: 150px;
+  }
+}
+.header__custom-input input {
+  color: #333;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px 50px 5px 10px;
+  border-radius: 20px;
+  max-width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.header__custom-input img {
+  position: absolute;
+  right: 20px;
+}/*# sourceMappingURL=header.css.map */

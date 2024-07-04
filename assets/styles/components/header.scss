@@ -1,0 +1,224 @@
+@import "../mixins";
+
+.header {
+    &__container {
+        padding: 20px 0;
+    }
+
+    &__container-bottom {
+        padding: 40px 0 20px 0;
+    }
+
+    &__top-wrapper {
+        background: rgba(207, 244, 129, 0.50);
+    }
+
+    &__top-inner {
+        @include flex-between;
+        @include medium-desktop {
+                gap: 25px;
+            }
+    }
+
+    &__contacts {
+        width: max-content;
+        @include flex-center-vert;
+        gap: 45px;
+
+        @include desktop {
+            gap: 3.5%;
+        }
+
+        @include tablet {
+            min-width: 100%;
+            @include flex-between;
+        }
+    }
+
+    &__contacts-item {
+            min-width: max-content;
+
+        @include flex-center-vert;
+        gap: 14px;
+    }
+
+    &__contacts-info {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    min-width: max-content;
+white-space: nowrap;
+        @include tablet {
+          
+            font-size: 14px;
+        }
+
+        @include mobile-sm {
+            font-size: 10px;
+        }
+
+        &--address {
+         width: max-content;
+            @include desktop {
+                max-width: 120px;
+            }
+            @include tablet {
+                white-space: wrap;
+            }
+
+        }
+
+        &--phone {
+            @include desktop {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    &__top-list {
+        @include flex-center-vert;
+        gap: 45px;
+@include medium-desktop {
+        gap: 25px;
+    }
+        @include desktop {
+            gap: 15px;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__top-link {
+        white-space: nowrap;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__logo {
+        max-width: max-content;
+
+        img {
+            @include desktop {
+                width: 80%;
+            }
+        }
+    }
+
+    &__navigation-list {
+        @include flex-center-vert;
+        gap: 40px;
+@include medium-desktop{ 
+    gap: 20px;
+}
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__navigation-item {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__navigation-dropdown {
+        margin-top: 10px;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        li {
+            list-style: none;
+            padding: 8px;
+            text-align: left;
+        }
+
+        a {
+            color: black;
+            display: block;
+            padding: 8px 16px;
+
+            &:hover {
+                background-color: #ddd;
+            }
+        }
+    }
+
+    &__navigation-link {
+        white-space: nowrap;
+        @include flex-center-vert;
+        gap: 10px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+@include medium-desktop {
+        font-size: 16px;
+        gap: 5px;
+    }
+    
+        @include desktop {
+            font-size: 14px;
+        }
+    }
+
+    &__menu {
+        @include flex-center-vert;
+        gap: 16px;
+    }
+
+    &__button-lng {
+        background-color: #CFF481;
+        padding: 20px 17px;
+        border-radius: 50%;
+        @include flex-center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__custom-input {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid #333;
+        border-radius: 49px;
+        padding: 5px 10px;
+        width: 220px;
+        height: 60px;
+        background-color: #fff;
+@include medium-desktop {
+    width: 150px;
+    }
+        @include desktop {
+            width: 150px;
+        }
+    }
+
+    &__custom-input input {
+        color: #333;
+        border: none;
+        outline: none;
+        flex: 1;
+        padding: 5px 50px 5px 10px;
+        border-radius: 20px;
+        max-width: 100%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__custom-input img {
+        position: absolute;
+        right: 20px;
+    }
+}
