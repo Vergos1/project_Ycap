@@ -25,7 +25,7 @@
                             <img class="header__icon" src="./assets/images/location-icon.svg" alt="location">
                             <address class="header__contacts-info header__contacts-info--address">
                                 м. Київ,
-                                вул. Антоновича
+                                вул. <br class="header__contacts-info--mobile"> Антоновича
                                 34
                             </address>
                         </div>
@@ -76,7 +76,7 @@
                             <li class="header__navigation-item">
                                 <button class="header__navigation-link">
                                     Дослідження
-                                    <img src="./assets/images/chevron-icon.svg" alt="chevron">
+                                    <img src="./assets/images/chevron-icon.svg" alt="chevron" class="chevron-icon-nav">
                                 </button>
                                 <ul class="header__navigation-dropdown">
                                     <li><a href="#">Діагнозів</a></li>
@@ -87,7 +87,7 @@
                             <li class="header__navigation-item">
                                 <button class="header__navigation-link">
                                     Консалтинг
-                                    <img src="./assets/images/chevron-icon.svg" alt="chevron">
+                                    <img src="./assets/images/chevron-icon.svg" alt="chevron" class="chevron-icon-nav">
                                 </button>
                                 <ul class="header__navigation-dropdown">
                                     <li><a href="#">Інформації</a></li>
@@ -116,10 +116,10 @@
                             <input type="text" placeholder="Пошук">
                             <img src="./assets/images/search-icon.svg" alt="search">
                         </div>
+                        <button id="button-lng" class="header__button-lng">UA</button>
                         <button id="burger" class="header__burger">
                             <img src="./assets/images/burger-icon.svg" alt="">
                         </button>
-                        <button id="button-lng" class="header__button-lng">UA</button>
                     </div>
                 </div>
             </div>
@@ -129,6 +129,57 @@
         <div class="container"></div>
     </main>
 
+    <div class="burger-menu">
+        <header class="burger-menu__header">
+            <button id="button-lng" class="burger-menu__button-lng">UA</button>
+            <button id="close" class="burger-menu__close">
+                <img src="./assets/images/close-icon.svg" alt="close">
+            </button>
+        </header>
+        <ul class="burger-menu__navigation-list">
+            <li class="burger-menu__navigation-item">
+                <button class="burger-menu__navigation-link">
+                    Дослідження
+                    <img src="./assets/images/chevron-white-icon.svg" alt="chevron" class="chevron-icon">
+                </button>
+                <ul class="burger-menu__navigation-dropdown">
+                    <li><a href="#">ГМО</a></li>
+                    <li><a href="#">Олійні</a></li>
+                    <li><a href="#">Зернові</a></li>
+                    <li><a href="#">Паливо</a></li>
+                    <li class="burger-menu__navigation-selected">Всі дослідження</li>
+                </ul>
+            </li>
+            <li class="burger-menu__navigation-item">
+                <button class="burger-menu__navigation-link">
+                    Консалтинг
+                    <img src="./assets/images/chevron-white-icon.svg" alt="chevron" class="chevron-icon">
+                </button>
+                <ul class="burger-menu__navigation-dropdown">
+                    <li><a href="#">ГМО</a></li>
+                    <li><a href="#">Олійні</a></li>
+                    <li><a href="#">Зернові</a></li>
+                    <li><a href="#">Паливо</a></li>
+                    <li class="burger-menu__navigation-selected">Всі дослідження</li>
+                </ul>
+            </li>
+            <li class="burger-menu__navigation-item">
+                <a href="#" class="burger-menu__navigation-link">
+                    Сертифікація
+                </a>
+            </li>
+            <li class="burger-menu__navigation-item">
+                <a href="#" class="burger-menu__navigation-link">
+                    Навчання
+                </a>
+            </li>
+            <li class="burger-menu__navigation-item">
+                <a href="#" class="burger-menu__navigation-link">
+                    Наші клієнти
+                </a>
+            </li>
+        </ul>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/scripts/index.js" type="module" defer></script>
 </body>

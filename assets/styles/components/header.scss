@@ -7,6 +7,10 @@
 
     &__container-bottom {
         padding: 40px 0 20px 0;
+
+        @include mobile {
+            padding: 30px 0 20px 0;
+        }
     }
 
     &__top-wrapper {
@@ -15,9 +19,10 @@
 
     &__top-inner {
         @include flex-between;
+
         @include medium-desktop {
-                gap: 25px;
-            }
+            gap: 25px;
+        }
     }
 
     &__contacts {
@@ -35,11 +40,29 @@
         }
     }
 
-    &__contacts-item {
-            min-width: max-content;
+    .chevron-icon-nav {
+        transition: transform 0.3s ease;
+    }
 
+    .rotated {
+        transform: rotate(180deg);
+    }
+
+    &__icon {
+        @include mobile {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__contacts-item {
+        min-width: max-content;
         @include flex-center-vert;
         gap: 14px;
+
+        @include tablet {
+            gap: 6px;
+        }
     }
 
     &__contacts-info {
@@ -47,10 +70,10 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-    min-width: max-content;
-white-space: nowrap;
+        min-width: max-content;
+        white-space: nowrap;
+
         @include tablet {
-          
             font-size: 14px;
         }
 
@@ -58,13 +81,24 @@ white-space: nowrap;
             font-size: 10px;
         }
 
+        &--mobile {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+
         &--address {
-         width: max-content;
+            width: max-content;
+            height: max-content;
+
             @include desktop {
                 max-width: 120px;
             }
+
             @include tablet {
-                white-space: wrap;
+                white-space: normal;
             }
 
         }
@@ -79,9 +113,11 @@ white-space: nowrap;
     &__top-list {
         @include flex-center-vert;
         gap: 45px;
-@include medium-desktop {
-        gap: 25px;
-    }
+
+        @include medium-desktop {
+            gap: 25px;
+        }
+
         @include desktop {
             gap: 15px;
         }
@@ -101,10 +137,18 @@ white-space: nowrap;
 
     &__logo {
         max-width: max-content;
+        min-width: 114px;
+        height: 30px;
 
         img {
             @include desktop {
                 width: 80%;
+            }
+
+            @include tablet {
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -112,9 +156,11 @@ white-space: nowrap;
     &__navigation-list {
         @include flex-center-vert;
         gap: 40px;
-@include medium-desktop{ 
-    gap: 20px;
-}
+
+        @include medium-desktop {
+            gap: 20px;
+        }
+
         @include desktop {
             display: none;
         }
@@ -159,11 +205,12 @@ white-space: nowrap;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-@include medium-desktop {
-        font-size: 16px;
-        gap: 5px;
-    }
-    
+
+        @include medium-desktop {
+            font-size: 16px;
+            gap: 5px;
+        }
+
         @include desktop {
             font-size: 14px;
         }
@@ -183,6 +230,10 @@ white-space: nowrap;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__custom-input {
@@ -195,11 +246,25 @@ white-space: nowrap;
         width: 220px;
         height: 60px;
         background-color: #fff;
-@include medium-desktop {
-    width: 150px;
-    }
+
+        @include medium-desktop {
+            width: 150px;
+        }
+
         @include desktop {
             width: 150px;
+        }
+
+        @include mobile {
+            width: 120px;
+            height: 40px;
+        }
+
+        img {
+            @include mobile {
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 
@@ -215,10 +280,26 @@ white-space: nowrap;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
+        @include mobile {
+            padding: 5px 30px 5px 10px;
+        }
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
 
     &__custom-input img {
         position: absolute;
         right: 20px;
+    }
+
+    &__burger {
+        display: none;
+
+        @include desktop {
+            display: block;
+        }
     }
 }

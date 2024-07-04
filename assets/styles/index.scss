@@ -70,5 +70,9 @@ main {
         max-width: calc(100% - 40px);
     }
 }
+.no-scroll {
+    overflow: hidden
+}
 
 @import "./components/header.scss";
+@import "./components/burger.scss";
